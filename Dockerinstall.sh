@@ -8,3 +8,4 @@ sudo apt install docker-ce
 sudo systemctl status docker
 sudo usermod -aG docker ubuntu
 docker --version
+t
