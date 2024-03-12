@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
-                        docker.image('hemanthyadav70/test5:v10').push()
+                        docker.image('hemanthyadav70/test5:v101').push()
                     }
                 }
             }
