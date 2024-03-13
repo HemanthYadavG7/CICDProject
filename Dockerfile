@@ -1,14 +1,8 @@
-# Use an official Python runtime as a parent image
-FROM python:3.8
+# Use an official Nginx runtime as the base image
+FROM nginx:alpine
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Copy the webpage files to the appropriate directory in the container
+COPY index.html /usr/share/nginx/html
 
-# Create a Python script that prints "Hello World"
-RUN echo "print('Hello World')" > hello_world.py
-
-# Run hello_world.py when the container launches
-CMD ["python", "./hello_world.py"]
-
-
-
+# Expose port 80 to allow outside access
+EXPOSE 80
