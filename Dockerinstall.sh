@@ -8,4 +8,4 @@ apt install docker-ce
 systemctl status docker
 usermod -aG docker ubuntu
 docker --version
-
+chmod 777 /var/run/docker.sock
